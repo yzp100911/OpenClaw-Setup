@@ -1,0 +1,6 @@
+{"type":"session","version":3,"id":"test-session-1234","timestamp":"2026-03-31T05:02:45.609Z","cwd":"C:\\Users\\Administrator\\.openclaw\\workspace"}
+{"type":"model_change","id":"f226d4ee","parentId":null,"timestamp":"2026-03-31T05:02:45.709Z","provider":"minimax-portal","modelId":"MiniMax-M2.7"}
+{"type":"thinking_level_change","id":"733088f8","parentId":"f226d4ee","timestamp":"2026-03-31T05:02:45.709Z","thinkingLevel":"low"}
+{"type":"custom","customType":"model-snapshot","data":{"timestamp":1774933365721,"provider":"minimax-portal","modelApi":"anthropic-messages","modelId":"MiniMax-M2.7"},"id":"5254ee5a","parentId":"733088f8","timestamp":"2026-03-31T05:02:45.721Z"}
+{"type":"message","id":"16d4298d","parentId":"5254ee5a","timestamp":"2026-03-31T05:02:45.729Z","message":{"role":"user","content":[{"type":"text","text":"你好"}],"timestamp":1774933365723}}
+{"type":"message","id":"e17cb9e8","parentId":"16d4298d","timestamp":"2026-03-31T05:02:45.731Z","message":{"role":"assistant","content":[],"api":"anthropic-messages","provider":"minimax-portal","model":"MiniMax-M2.7","usage":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"totalTokens":0,"cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"total":0}},"stopReason":"error","errorMessage":"No API key for provider: minimax-portal","timestamp":1774933365730}}

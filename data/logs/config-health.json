@@ -1,0 +1,40 @@
+{
+  "entries": {
+    "D:\\BF\\uniapp\\admin\\OpenClaw-Setup\\data\\openclaw.json": {
+      "lastKnownGood": {
+        "hash": "8d0c3cb8e2704b284d64bb8be382daf4cd71e60872d5e1149b9142a3a240bfe5",
+        "bytes": 2480,
+        "mtimeMs": 1774788217267.4985,
+        "ctimeMs": 1774788217282.396,
+        "hasMeta": true,
+        "gatewayMode": "local",
+        "observedAt": "2026-03-29T12:43:37.285Z"
+      },
+      "lastObservedSuspiciousSignature": null
+    },
+    "D:\\BF\\uniapp\\open\\OpenClaw-Setup\\data\\openclaw.json": {
+      "lastKnownGood": {
+        "hash": "f03874f8dd43ca0fe3815dc67b7747c27b5e7d2554288870c9d0b50f6e0ac6fb",
+        "bytes": 2480,
+        "mtimeMs": 1774790494899.5437,
+        "ctimeMs": 1774790494916.314,
+        "hasMeta": true,
+        "gatewayMode": "local",
+        "observedAt": "2026-03-29T13:21:34.930Z"
+      },
+      "lastObservedSuspiciousSignature": null
+    },
+    "D:\\open260331\\OpenClaw-Setup\\data\\openclaw.json": {
+      "lastKnownGood": {
+        "hash": "d9b34f834df73b8d8253f8cd985b9e5c87fa02aaae83729bfed329d4b8c70648",
+        "bytes": 3809,
+        "mtimeMs": 1775217612471.1443,
+        "ctimeMs": 1775217612481.0085,
+        "hasMeta": true,
+        "gatewayMode": "local",
+        "observedAt": "2026-04-03T12:00:12.486Z"
+      },
+      "lastObservedSuspiciousSignature": null
+    }
+  }
+}

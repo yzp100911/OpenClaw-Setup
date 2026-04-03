@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.26",
+    "lastTouchedAt": "2026-04-03T12:00:12.471Z"
+  },
+  "env": {
+    "OPENROUTER_API_KEY": "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",
+    "MINIMAX_API_KEY": "sk-cp-R8WSfrBc5nuT-YTIh6xE0lW3GkgCgVE3bRrbwkWj8iEhfDahq_VaXpFsqzmY1V6g2U3bZXh2VwyMVvpKxP8K1gQJFSmuzWM1mGFeuL_IDA1eIlHcmCmJrGs",
+    "MINIMAX_PORTAL_API_KEY": "sk-cp-R8WSfrBc5nuT-YTIh6xE0lW3GkgCgVE3bRrbwkWj8iEhfDahq_VaXpFsqzmY1V6g2U3bZXh2VwyMVvpKxP8K1gQJFSmuzWM1mGFeuL_IDA1eIlHcmCmJrGs",
+    "MINIMAX_OAUTH_TOKEN": "sk-cp-R8WSfrBc5nuT-YTIh6xE0lW3GkgCgVE3bRrbwkWj8iEhfDahq_VaXpFsqzmY1V6g2U3bZXh2VwyMVvpKxP8K1gQJFSmuzWM1mGFeuL_IDA1eIlHcmCmJrGs"
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-03T10:41:11.608Z",
+    "lastRunVersion": "2026.3.26",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "minimax:cn": {
+        "provider": "minimax",
+        "mode": "api_key"
+      },
+      "minimax-portal:default": {
+        "provider": "minimax-portal",
+        "mode": "oauth"
+      },
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "minimax": {
+        "baseUrl": "https://api.minimaxi.com/anthropic",
+        "apiKey": "sk-cp-R8WSfrBc5nuT-YTIh6xE0lW3GkgCgVE3bRrbwkWj8iEhfDahq_VaXpFsqzmY1V6g2U3bZXh2VwyMVvpKxP8K1gQJFSmuzWM1mGFeuL_IDA1eIlHcmCmJrGs",
+        "api": "anthropic-messages",
+        "authHeader": true,
+        "models": [
+          {
+            "id": "MiniMax-M2.7",
+            "name": "MiniMax M2.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0.3,
+              "output": 1.2,
+              "cacheRead": 0.06,
+              "cacheWrite": 0.375
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          }
+        ]
+      },
+      "minimax-portal": {
+        "baseUrl": "https://api.minimaxi.com/anthropic",
+        "apiKey": "sk-cp-R8WSfrBc5nuT-YTIh6xE0lW3GkgCgVE3bRrbwkWj8iEhfDahq_VaXpFsqzmY1V6g2U3bZXh2VwyMVvpKxP8K1gQJFSmuzWM1mGFeuL_IDA1eIlHcmCmJrGs",
+        "models": []
+      },
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "apiKey": "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",
+        "models": []
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "minimax-portal/MiniMax-M2.7",
+        "fallbacks": [
+          "minimax-portal/MiniMax-M2.5",
+          "minimax/MiniMax-M2.7",
+          "minimax-portal/MiniMax-M2.7-highspeed",
+          "openrouter/auto"
+        ]
+      },
+      "models": {
+        "minimax-portal/MiniMax-M2.5": {
+          "alias": "minimax-m2.5"
+        },
+        "minimax-portal/MiniMax-M2.7": {
+          "alias": "minimax-m2.7"
+        },
+        "minimax/MiniMax-M2.7": {
+          "alias": "Minimax"
+        },
+        "minimax-portal/MiniMax-M2.7-highspeed": {
+          "alias": "minimax-m2.7-highspeed"
+        },
+        "openrouter/auto": {
+          "alias": "OpenRouter"
+        }
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "0d81ae06a33844c1600a2bf8df043abbdabcbe8b1f3a4eb6"
+    },
+    "remote": {}
+  },
+  "plugins": {
+    "entries": {
+      "minimax": {
+        "enabled": true,
+        "config": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{"type":"session","version":3,"id":"cclaw-web-1774932684812","timestamp":"2026-03-31T04:51:30.768Z","cwd":"C:\\Users\\Administrator\\.openclaw\\workspace"}
+{"type":"model_change","id":"cde91b09","parentId":null,"timestamp":"2026-03-31T04:51:31.081Z","provider":"minimax-portal","modelId":"MiniMax-M2.7"}
+{"type":"thinking_level_change","id":"3ed88dcf","parentId":"cde91b09","timestamp":"2026-03-31T04:51:31.082Z","thinkingLevel":"low"}
+{"type":"custom","customType":"model-snapshot","data":{"timestamp":1774932691092,"provider":"minimax-portal","modelApi":"anthropic-messages","modelId":"MiniMax-M2.7"},"id":"ba458135","parentId":"3ed88dcf","timestamp":"2026-03-31T04:51:31.092Z"}
+{"type":"message","id":"044a4d91","parentId":"ba458135","timestamp":"2026-03-31T04:51:31.102Z","message":{"role":"user","content":[{"type":"text","text":"[Tue 2026-03-31 12:51 GMT+8] 你好"}],"timestamp":1774932691094}}
+{"type":"message","id":"84d05193","parentId":"044a4d91","timestamp":"2026-03-31T04:51:31.107Z","message":{"role":"assistant","content":[],"api":"anthropic-messages","provider":"minimax-portal","model":"MiniMax-M2.7","usage":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"totalTokens":0,"cost":{"input":0,"output":0,"cacheRead":0,"cacheWrite":0,"total":0}},"stopReason":"error","errorMessage":"No API key for provider: minimax-portal","timestamp":1774932691106}}
